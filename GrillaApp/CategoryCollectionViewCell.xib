@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="catCollectionView" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="GrillaApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guardianes" translatesAutoresizingMaskIntoConstraints="NO" id="gaV-Fz-ar3">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="91"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftf-JK-Sae">
+                        <rect key="frame" x="0.0" y="99" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="f3E-7k-Gy3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="gaV-Fz-ar3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="03V-zD-stW"/>
+                <constraint firstItem="gaV-Fz-ar3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="H99-MO-HDg"/>
+                <constraint firstItem="Ftf-JK-Sae" firstAttribute="top" secondItem="gaV-Fz-ar3" secondAttribute="bottom" constant="8" id="LYD-yD-gx0"/>
+                <constraint firstItem="Ftf-JK-Sae" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OV9-VB-rGP"/>
+                <constraint firstAttribute="trailing" secondItem="Ftf-JK-Sae" secondAttribute="trailing" id="Qlq-Dt-4m9"/>
+                <constraint firstAttribute="bottom" secondItem="Ftf-JK-Sae" secondAttribute="bottom" id="RMW-rM-EaZ"/>
+                <constraint firstAttribute="trailing" secondItem="gaV-Fz-ar3" secondAttribute="trailing" id="Sq0-A4-NCg"/>
+            </constraints>
+            <size key="customSize" width="265" height="141"/>
+            <connections>
+                <outlet property="imageMovie" destination="gaV-Fz-ar3" id="zy0-x3-jiW"/>
+                <outlet property="titleLabel" destination="Ftf-JK-Sae" id="oYP-dt-M1L"/>
+            </connections>
+            <point key="canvasLocation" x="217.55725190839695" y="51.760563380281695"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="guardianes" width="546" height="709"/>
+    </resources>
+</document>

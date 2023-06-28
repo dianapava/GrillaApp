@@ -8,12 +8,9 @@
 import UIKit
 
 class MovieCollectionViewCell: UICollectionViewCell {
-
     @IBOutlet weak var titleSection: UILabel!
-    @IBOutlet weak var collectionSection: UICollectionView!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    func set(data: SectionMovie){
+        titleSection.text = data.title
     }
-
 }
